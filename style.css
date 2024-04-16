@@ -1,0 +1,71 @@
+
+@font-face {
+    font-family: 'surt';
+    src: url('/src/fonts/surt-regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'apoc';
+    src: url('/src/fonts/Apoc-Revelations.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#p5Sketch {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    cursor: url(CURSOR_3D.png), auto
+}
+
+body {
+    font-size: 2rem;
+    font-family: surt;
+    font-style: normal;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 2rem;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: yellow;
+    text-align: center;
+    pointer-events: none;
+    display: none;
+}
+
+.container-fluid {
+    scroll-snap-type: mandatory; 
+    background-color: black;
+}
+
+#press_enter {
+    display: none;
+    color: white;
+    position: absolute;
+    font-family: surt;
+    font-size: 2vh;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 6vh;
+}
+
+@media (max-width: 1100px) {
+    .metadata{
+        display: block;
+        filter: none;
+    }
+  }
+
